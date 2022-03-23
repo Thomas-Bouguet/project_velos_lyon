@@ -41,16 +41,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#has_street -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#has_street">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Borough"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Street"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#has_velo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#has_velo">
@@ -249,7 +239,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_lat">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -258,7 +248,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_lng">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 

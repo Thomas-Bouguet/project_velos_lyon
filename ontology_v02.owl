@@ -101,6 +101,7 @@
     <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#borough_id -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#borough_id">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_borough_id"/>
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#street_borough_id"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Borough"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -183,6 +184,15 @@
     <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_bicyclenb -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_bicyclenb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_borough_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_borough_id">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
@@ -441,7 +451,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Gerland">
         <rdf:type rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
+        <station_borough_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">007</station_borough_id>
         <station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7006</station_id>
+        <station_lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.7275732848257200</station_lat>
+        <station_lng rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8311974821956260</station_lng>
     </owl:NamedIndividual>
     
 
@@ -482,6 +495,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Lyon_7eme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Lyon_7eme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Borough"/>
+        <borough_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">007</borough_id>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Place_Flammarion -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Place_Flammarion">
@@ -504,7 +526,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Vinatier">
         <rdf:type rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
+        <station_borough_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">003</station_borough_id>
         <station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3090</station_id>
+        <station_lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.7419115491076800</station_lat>
+        <station_lng rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8939591141013690</station_lng>
     </owl:NamedIndividual>
     
 
@@ -513,7 +538,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Guillotière_/_Madeleine">
         <rdf:type rdf:resource="http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station"/>
+        <station_borough_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">007</station_borough_id>
         <station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7039</station_id>
+        <station_lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.7510565465262100</station_lat>
+        <station_lng rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8480482303453220</station_lng>
     </owl:NamedIndividual>
     
 

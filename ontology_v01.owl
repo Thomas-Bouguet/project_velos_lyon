@@ -1,0 +1,347 @@
+@prefix : <http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon> .
+
+<http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon> rdf:type owl:Ontology ;
+                                                                         rdfs:comment "This is the project ontology."@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Has
+:Has rdf:type owl:ObjectProperty ;
+     rdfs:domain :Lyon ;
+     rdfs:range :Station .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Is_composed_of
+:Is_composed_of rdf:type owl:ObjectProperty ;
+                rdfs:domain :Lyon ;
+                rdfs:range :Borough .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#has_street
+:has_street rdf:type owl:ObjectProperty ;
+            rdfs:domain :Borough ;
+            rdfs:range :Street .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#has_velo
+:has_velo rdf:type owl:ObjectProperty ;
+          rdfs:domain :Station ;
+          rdfs:range :Bicycle .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#is_in
+:is_in rdf:type owl:ObjectProperty ;
+       rdfs:domain :Lyon ;
+       rdfs:range :Traveler .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#bicycle_id
+:bicycle_id rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Bicycle ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#bicycle_station_id
+:bicycle_station_id rdf:type owl:DatatypeProperty ;
+                    owl:equivalentProperty :station_id ;
+                    rdfs:domain :Bicycle ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#borough_id
+:borough_id rdf:type owl:DatatypeProperty ;
+            owl:equivalentProperty :street_borough_id ;
+            rdfs:domain :Borough ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#borough_name
+:borough_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Borough ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_adress
+:station_adress rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Station ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_arrondisment
+:station_arrondisment rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Station ;
+                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_availability
+:station_availability rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Station ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_availabilitycode
+:station_availabilitycode rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Station ;
+                          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_available_bike_stands
+:station_available_bike_stands rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Station ;
+                               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_available_bikes
+:station_available_bikes rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Station ;
+                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_banking
+:station_banking rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Station ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_bicyclenb
+:station_bicyclenb rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Station ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_code_insee
+:station_code_insee rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Station ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_gid
+:station_gid rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Station ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_id
+:station_id rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Station ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_last_update
+:station_last_update rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Station ;
+                     rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_last_update_fme
+:station_last_update_fme rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Station ;
+                         rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_lat
+:station_lat rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Station ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_lng
+:station_lng rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Station ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_name
+:station_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Station ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_pole
+:station_pole rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Station ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#station_status
+:station_status rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Station ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#street_borough_id
+:street_borough_id rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Street ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#street_id
+:street_id rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Street ;
+           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#traveler_id
+:traveler_id rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Traveler ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#traveler_name
+:traveler_name rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Traveler ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#traveler_surname
+:traveler_surname rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Traveler ;
+                  rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Bicycle
+:Bicycle rdf:type owl:Class ;
+         rdfs:subClassOf :Station .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Borough
+:Borough rdf:type owl:Class ;
+         rdfs:subClassOf :Lyon .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Lyon
+:Lyon rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Station
+:Station rdf:type owl:Class ;
+         rdfs:subClassOf :Lyon .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Street
+:Street rdf:type owl:Class ;
+        rdfs:subClassOf :Borough .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Traveler
+:Traveler rdf:type owl:Class ;
+          rdfs:subClassOf :Lyon .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Bicycle_0001
+:Bicycle_0001 rdf:type owl:NamedIndividual ,
+                       :Bicycle ;
+              :bicycle_id 0001 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Bicycle_0002
+:Bicycle_0002 rdf:type owl:NamedIndividual ,
+                       :Bicycle ;
+              :bicycle_id 0002 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Bicycle_0003
+:Bicycle_0003 rdf:type owl:NamedIndividual ,
+                       :Bicycle ;
+              :bicycle_id 0003 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Boulevard_Pinel
+:Boulevard_Pinel rdf:type owl:NamedIndividual ,
+                          :Street ;
+                 :borough_id 00010456 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Chris_Marker
+:Chris_Marker rdf:type owl:NamedIndividual ,
+                       :Traveler ;
+              :traveler_id 00030123 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Gerland
+:Gerland rdf:type owl:NamedIndividual ,
+                  :Station ;
+         :station_id 7006 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Jean_Meleville
+:Jean_Meleville rdf:type owl:NamedIndividual ,
+                         :Traveler ;
+                :traveler_id 00010123 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Lyon_2eme
+:Lyon_2eme rdf:type owl:NamedIndividual ,
+                    :Borough ;
+           :borough_id 002 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Lyon_3eme
+:Lyon_3eme rdf:type owl:NamedIndividual ,
+                    :Borough ;
+           :borough_id 003 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Lyon_4eme
+:Lyon_4eme rdf:type owl:NamedIndividual ,
+                    :Borough ;
+           :borough_id 004 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Place_Flammarion
+:Place_Flammarion rdf:type owl:NamedIndividual ,
+                           :Street ;
+                  :borough_id 00020456 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Ridley_Scott
+:Ridley_Scott rdf:type owl:NamedIndividual ,
+                       :Traveler ;
+              :traveler_id 00020123 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Vinatier
+:Vinatier rdf:type owl:NamedIndividual ,
+                   :Station ;
+          :station_id 3090 .
+
+
+###  http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Guillotière_/_Madeleine
+<http://www.semanticweb.org/tboug/ontologies/2022/2/project-grand-lyon#Guillotière_/_Madeleine> rdf:type owl:NamedIndividual ,
+                                                                                                         :Station ;
+                                                                                                :station_id 7039 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Borough
+                :Station
+                :Traveler
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

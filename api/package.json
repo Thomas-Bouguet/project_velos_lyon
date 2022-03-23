@@ -1,0 +1,13 @@
+{
+    "name": "lyon_api",
+    "version": "0.0.1",
+    "description": "API for bicycle in Lyon.",
+    "main": "index.js",
+    "repository": "git@github.com:92bondstreet/clear-fashion.git",
+    "dependencies": {
+        "node-fetch": "^3.2.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}

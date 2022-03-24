@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adrie/ontologies/Projet#"
+     xml:base="http://www.semanticweb.org/adrie/ontologies/Projet"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Projet="http://www.semanticweb.org/adrie/ontologies/Projet#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#available_bike_stands -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#available_bike_stands">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#available_bikes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#available_bikes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#bike_stands -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#bike_stands">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#conditions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#conditions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#humidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#humidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#lat_station -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#lat_station">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#lat_weather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#lat_weather">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#lon_station -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#lon_station">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#lon_weather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#lon_weather">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#name_station -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#name_station">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#pressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#pressure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#station_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#station_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#temp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#temp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#visibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#visibility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#wind_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#wind_speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#Weather"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adrie/ontologies/Projet#station_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adrie/ontologies/Projet#station_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adrie/ontologies/Projet#Bicycle_station"/>
+        <available_bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</available_bike_stands>
+        <available_bikes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</available_bikes>
+        <bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</bike_stands>
+        <city>Lyon</city>
+        <name_station>Jean XII</name_station>
+        <station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">304</station_id>
+        <status>OPEN</status>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

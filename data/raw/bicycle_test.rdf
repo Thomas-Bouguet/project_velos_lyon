@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://www.semanticweb.org/adrie/ontologies/Projet#">
+
+  <rdf:Description rdf:nodeID="genid1">
+    <ns0:available_bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</ns0:available_bike_stands>
+    <ns0:available_bikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ns0:available_bikes>
+    <ns0:bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</ns0:bike_stands>
+    <ns0:city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyon</ns0:city>
+    <ns0:lat_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45.7400516465032750</ns0:lat_station>
+    <ns0:lon_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.8594164128821960</ns0:lon_station>
+    <ns0:name_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place Mendès France</ns0:name_station>
+    <ns0:station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8010</ns0:station_id>
+    <ns0:status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPEN</ns0:status>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="genid2">
+    <ns0:available_bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</ns0:available_bike_stands>
+    <ns0:available_bikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</ns0:available_bikes>
+    <ns0:bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</ns0:bike_stands>
+    <ns0:city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyon</ns0:city>
+    <ns0:lat_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45.7467662258473740</ns0:lat_station>
+    <ns0:lon_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.8420506993495060</ns0:lon_station>
+    <ns0:name_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servant / Jaboulay</ns0:name_station>
+    <ns0:station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7055</ns0:station_id>
+    <ns0:status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPEN</ns0:status>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="genid3">
+    <ns0:available_bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ns0:available_bike_stands>
+    <ns0:available_bikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</ns0:available_bikes>
+    <ns0:bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</ns0:bike_stands>
+    <ns0:city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyon</ns0:city>
+    <ns0:lat_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45.7084437290321550</ns0:lat_station>
+    <ns0:lon_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.8548610775585280</ns0:lon_station>
+    <ns0:name_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saint Fons - 4 chemins</ns0:name_station>
+    <ns0:station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17002</ns0:station_id>
+    <ns0:status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPEN</ns0:status>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="genid4">
+    <ns0:available_bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</ns0:available_bike_stands>
+    <ns0:available_bikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns0:available_bikes>
+    <ns0:bike_stands rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</ns0:bike_stands>
+    <ns0:city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyon</ns0:city>
+    <ns0:lat_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45.7565273368784000</ns0:lat_station>
+    <ns0:lon_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.7966121788894250</ns0:lon_station>
+    <ns0:name_station rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place des Compagnons de la chanson</ns0:name_station>
+    <ns0:station_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5002</ns0:station_id>
+    <ns0:status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPEN</ns0:status>
+  </rdf:Description>
+
+</rdf:RDF>

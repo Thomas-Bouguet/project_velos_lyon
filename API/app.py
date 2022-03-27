@@ -8,12 +8,13 @@ app = flask.Flask(__name__)
 cities = {"Lyon":{"coord":(45.764043,4.835659)}}
 
 query = {
-    "PREFIX":"http://www.semanticweb.org/adrie/ontologies/Projet#",
+    "PREFIX":"D:\\Thomas\\Etude\\ESILV\\A8\\Web_datamining_and_semantics\\Projet\\Github\\project_velos_lyon\\data\\rdf_files\\bicycle_test.rdf",
     "all_open_station":"""
-    SELECT ?name WHERE 
+    PREFIX ns0: <http://www.semanticweb.org/adrie/ontologies/Projet#>
+    SELECT ?x ?y ?z WHERE
     {
-        ?x velo:status 'OPEN'.
-        ?x velo:name_station ?name.
+        ?x ?y ?z .
+        ?x ns0:status 'OPEN'
     }
     """,
     "all_lat":"""
@@ -56,21 +57,52 @@ def city():
 @app.route("/lyon")
 def lyon():
     g = rdf.Graph()
-    g.parse(query['PREFIX'])
+    g.load("D:\\Thomas\\Etude\\ESILV\\A8\\Web_datamining_and_semantics\\Projet\\Github\\project_velos_lyon\\data\\rdf_files\\bicycle_lyon.rdf")
 
-    response_query = g.query(query['all_lat'])
+    print(len(g))
 
-    to_jsonify = response_query
-    return flask.render_template('lyon.html')
+    count = 0
+
+    for s, p, o in g:
+        count += 1
+        print(s,p,o)
+        if count > 5:
+            break
+
+    q = """
+    SELECT ?x ?y ?z
+    WHERE {
+        ?x ?y ?z .
+        ?x ns0:status 'OPEN' .
+    }"""
+    
+    response_query = g.query(q)
+
+    to_jsonify = ""
+
+    print(len(response_query))
+
+    for row in response_query:
+        print("row :", row)
+        to_jsonify += "<p>" + row.s + " " + row.p + " " + row.o + "</p>"
+    print()
+    print("response_query :", response_query)
+    print()
+    print("to_jsonify :", to_jsonify)
+    return flask.render_template('lyon.html', display=to_jsonify)
 
 @app.route("/city/<city>")
 def fetch_city(city):
     g = rdf.Graph()
-    g.parse(query['PREFIX'])
+    g.load(query['PREFIX'])
 
-    response_query = g.query(query['all_lat'])
+    q = query['all_open_station']
+    response_query = g.query(q)
 
-    to_jsonify = response_query
+    to_jsonify = ""
+
+    for row in response_query:
+        to_jsonify += "<p>" + row.s + " " + row.p + " " + row.o + "</p>"
     #to_jsonify = {"main" : "Hello " + city + " !"}
     
     return to_jsonify
@@ -100,4 +132,4 @@ def display_lyon_map():
 
 if __name__ == "__main__":
     
-    app.run(debug=True)
+    app.run(debug=True, reload=True)

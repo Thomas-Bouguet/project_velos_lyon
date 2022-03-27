@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>City</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css_style.css') }}">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('city') }}">Chose a city</a></li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            <h1 class="body"></h1>
+
+            <div class="map" style="display: block; background: url(&quot;https://upload.wikimedia.org/wikipedia/commons/f/f7/France_relief_location_map.jpg&quot;) 0% 0% / contain no-repeat; position: relative; padding: 0px; width: 960px; height: 593px;">
+                <canvas style="width: 960px; height: 593px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;" height="593" width="960"></canvas>
+                <img class="map_maphilighted" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/France_relief_location_map.jpg" width="960" height="593" usemap="#france" style="opacity: 1e-10; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;">
+                
+                <map name="france" id="map_france">
+                    <area class="france_areas" id="lyon_area" shape="circle" coords="300,300,100" href="lyon">
+                </map>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" charset="UTF-8" src="../static/scripts/city.js"></script>
+    </body>
+    <footer>
+        <p>{{ now }}, Ariza - Azer - Bordenave - Bouguet.</p>
+    </footer>
+
+</html>

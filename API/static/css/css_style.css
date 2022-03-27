@@ -1,0 +1,22 @@
+map {
+    display: inline;
+}
+
+area:-webkit-any-link {
+    cursor: pointer;
+}
+
+area {
+    display: inline;
+}
+
+/*
+area {
+    display: -webkit-inline-box;
+    border: solid red 5px;
+    cursor: pointer;
+    width: 15em;
+    height: 15em;
+    box-sizing: border-box;
+}
+*/

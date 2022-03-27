@@ -13,29 +13,29 @@ query = {
     PREFIX ns0: <http://www.semanticweb.org/adrie/ontologies/Projet#>
     SELECT ?x ?y ?z WHERE
     {
-        ?x ?y ?z .
-        ?x ns0:status 'OPEN'
+        ?x ?y ?z.
+        ?x ns0:status 'OPEN'.
     }
     """,
     "all_lat":"""
     SELECT ?lat WHERE 
     {
-        ?x rdf:type velo:Bicycle_station.
-        ?x velo:lat_station ?lat.
+        ?x ?y ?z.
+        ?x ns0:lat_station ?lat.
     }
     """,
     "all_lon":"""
     SELECT ?lon WHERE 
     {
-        ?x rdf:type velo:Bicycle_station.
-        ?x velo:lon_station ?lon.
+        ?x ?y ?z.
+        ?x ns0:lon_station ?lon.
     }
     """,
     "five_more_stands":"""
     SELECT ?station WHERE
     {
-        ?station rdf:type velo:Bicycle_station.
-        ?station velo:available_bike_stands ?available.
+        ?station ?y ?z.
+        ?station ns0:available_bike_stands ?available.
         FILTER(?available > 5).
     }
     """

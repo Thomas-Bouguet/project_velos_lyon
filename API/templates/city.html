@@ -16,14 +16,8 @@
         <div class="wrapper">
             <h1 class="body"></h1>
 
-            <div class="map" style="display: block; background: url(&quot;https://upload.wikimedia.org/wikipedia/commons/f/f7/France_relief_location_map.jpg&quot;) 0% 0% / contain no-repeat; position: relative; padding: 0px; width: 960px; height: 593px;">
-                <canvas style="width: 960px; height: 593px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;" height="593" width="960"></canvas>
-                <img class="map_maphilighted" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/France_relief_location_map.jpg" width="960" height="593" usemap="#france" style="opacity: 1e-10; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;">
-                
-                <map name="france" id="map_france">
-                    <area class="france_areas" id="lyon_area" shape="circle" coords="300,300,100" href="lyon">
-                </map>
-
+            <div class="map" id="map">
+                <embed src="{{ url_for('display_france_map') }}" height="800" width="600">
             </div>
         </div>
 

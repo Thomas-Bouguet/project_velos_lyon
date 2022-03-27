@@ -15,6 +15,12 @@
 
         <div class="wrapper">
             <h1>Lyon !</h1>
+
+            <embed src="{{ url_for('fetch_city',city="lyon") }}">
+
+            <div class="map" id="map">
+                <embed src="{{ url_for('display_lyon_map') }}" height="1000" width="800">
+            </div>
         </div>
     </body>
     <footer>
